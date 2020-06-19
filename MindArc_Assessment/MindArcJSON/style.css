@@ -1,0 +1,145 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body { 
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  margin: 2em;
+}
+#sec1 {
+  display: flex;
+  justify-content: center;
+}
+.tabs {
+  width: 600px;
+  background-color: #09F;
+  border-radius: 5px 5px 5px 5px;
+}
+ul#tabs-nav {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  overflow: auto;
+}
+ul#tabs-nav li {
+  float: left;
+  font-weight: bold;
+  margin-right: 2px;
+  padding: 8px 10px;
+  border-radius: 5px 5px 5px 5px;
+  /*border: 1px solid #d5d5de;
+  border-bottom: none;*/
+  cursor: pointer;
+}
+ul#tabs-nav li:hover,
+ul#tabs-nav li.active {
+  background-color: #08E;
+}
+#tabs-nav li a {
+  text-decoration: none;
+  color: #FFF;
+}
+.tab-content {
+  padding: 10px;
+  border: 5px solid #09F;
+  background-color: #FFF;
+}
+
+#content {
+  display: none;
+}
+.accordion-container {
+    position: relative;
+    width: 100%;
+    border: 1px solid #0079c1;
+    border-top: none;
+    outline: 0;
+    cursor: pointer
+}
+
+.accordion-container .article-title {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0.625em 0.625em 0.625em 2em;
+    border-top: 1px solid #0079c1;
+    font-size: 1.25em;
+    font-weight: normal;
+    color: #0079c1;
+    cursor: pointer;
+}
+
+.accordion-container .article-title:hover,
+.accordion-container .article-title:active,
+.accordion-container .content-entry.open .article-title {
+    background-color: #0088ee;
+    color: white;
+}
+
+.accordion-container .article-title:hover i:before,
+.accordion-container .article-title:hover i:active,
+.accordion-container .content-entry.open i {
+    color: white;
+}
+
+.accordion-container .content-entry i {
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    font-style: normal;
+    font-size: 1.625em;
+    sans-serif;
+    color: #0079c1;
+}
+
+.accordion-container .content-entry i:before {
+    content: "+ ";
+}
+
+.accordion-container .content-entry.open i:before {
+    content: "- ";
+}
+
+.accordion-content {
+    display: none;
+    padding-left: 2.3125em;
+}
+#content {
+    width: 100%;
+}
+.accordion-container,
+#description {
+    width: 90%;
+    margin: 1.875em auto;
+}
+
+#description p {
+    line-height: 1.5;
+}
+
+#description h2 {
+    text-align: center;
+}
+.accordion-container .content-entry.open .article-title {
+    background-color: #09f !important;
+    color: white;
+}
+@media all and (min-width: 860px) {
+    #content {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 640px){
+  #sec1 {
+    display: none;
+  }
+  #content {
+  display: block;
+}
+.accordion-content {
+	padding: 10px;
+}
+}
