@@ -1,0 +1,217 @@
+.clear{
+	clear: both;
+}
+html, body{
+	margin: 0 auto;
+	padding: 0;	
+	box-sizing: border-box;
+}
+.con{
+	margin: 0 auto;
+	width: 100%;
+	max-width:1200px;
+}
+h1,
+h2,
+h3{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	margin: 0;
+}
+p{
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+.con {
+	width: 100%;
+	max-width: 1250px;
+}
+#bnr {
+	background-color: #8f8f8f;
+	padding: 200px 0;
+}
+#bnr .con {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#bnr .con h1 {
+	font-size: 60px;
+	line-height: 80px;
+	color: #fff;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#bnr .con p {
+	font-size: 35px;
+	line-height: 45px;
+	color: #fff;
+	text-align: center;
+}
+#sec1 {
+	margin: 70px 0;
+	padding: 0;
+}
+#sec1 .mbox {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+#sec1 .mbox .mbox-child img {
+	width: 100%;
+	position: relative;
+	border-radius: 5px;
+}
+#sec1 .mbox .mbox-child {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 35px;
+}
+#sec1 .mbox .mbox-child p {
+	font-size: 14px;
+	line-height: 23px;
+	padding: 20px 0 0;
+}
+#sec1 .mbox .mbox-child .btn a {
+	font-size: 14px;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 3px;
+	font-weight: 600;
+	padding: 8px 20px;
+	border: 2px solid #000;
+	display: inline-block;
+	border-radius: 50px;
+	margin: 15px 0 0;
+	color: #000;
+	transition: 1s ease-out;
+	position: relative;
+	z-index: 1;
+}
+#sec1 .mbox .mbox-child .btn a::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	background-color: #000;
+	display: block;
+	top: 0;
+	bottom: 0;
+	border-radius: 50px;
+	height: 100%;
+	width: 100%;
+	transform: scale(0);
+	opacity: 0;
+	transition: 0.3s ease-out;
+	z-index: -1;
+}
+#sec1 .mbox .mbox-child .btn a:hover:before {
+	transform: scale(1);
+	opacity: 1;
+}
+#sec1 .mbox .mbox-child .btn a:hover {
+	color: #fff;
+}
+
+@media screen and (max-width: 1080px) {
+  .con{
+		max-width:760px;
+	}
+	#bnr {
+	background-color: #8f8f8f;
+	padding: 150px 0;
+}
+	#sec1 .mbox .mbox-child p {
+	font-size: 13px;
+	line-height: 21px;
+	padding: 20px 0;
+}
+#sec1 .mbox .mbox-child {
+	padding: 10px 10px;
+}
+
+}
+@media screen and (max-width: 980px) {
+
+	#bnr {
+	background-color: #8f8f8f;
+		padding: 130px 0;
+	}	
+	#bnr .con h1 {
+	font-size: 45px;
+	line-height: 55px;
+	margin-bottom: 10px;
+}
+#bnr .con p {
+	font-size: 26px;
+	line-height: 35px;
+	color: #fff;
+}
+}
+@media screen and (max-width: 767px) {
+	.con{
+		max-width:680px;
+	}
+	#bnr {
+	background-color: #8f8f8f;
+	padding: 100px 0;
+}
+	#sec1 .mbox .mbox-child .btn a {
+	font-size: 13px;
+	letter-spacing: 2px;
+	padding: 8px 14px;
+	margin: 10px 0 0;
+}
+}
+@media screen and (max-width: 640px) {
+	.con{
+		max-width:540px;
+	}
+	#sec1 .mbox {
+	flex-direction: column;
+	align-items: center;
+}
+#sec1 .mbox .mbox-child {
+	width: 60%;
+	padding: 10px 10px 25px;
+}
+}
+@media screen and (max-width: 480px) {
+	.con{
+		max-width:380px;
+	}
+	#bnr .con p {
+	font-size: 25px;
+	line-height: 40px;
+}
+
+#bnr {
+	padding: 65px 0;
+}
+#bnr .con h1 {
+	font-size: 55px;
+	line-height: 65px;
+	margin-bottom: 15px;
+}
+#sec1 {
+	margin: 30px 0;
+}
+#sec1 .mbox .mbox-child {
+	width: 70%;
+}
+
+}
+@media screen and (max-width: 380px) {
+	#bnr .con h1 {
+	font-size: 50px;
+	line-height: 55px;
+	margin-bottom: 15px;
+}
+#bnr .con p {
+	font-size: 21px;
+	line-height: 33px;
+}	
+}
